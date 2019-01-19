@@ -1,0 +1,177 @@
+2019-01-19 15:03:52.5600 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-01-19 15:03:52.6778 Debug Search for auto loading files, location: C:\Users\Akshay\.nuget\packages\nlog\4.5.0\lib\netstandard2.0
+2019-01-19 15:03:52.6860 Debug Search for auto loading files, location: D:\AKKI_DEV\RND\CoreNLogRabbitMQ\CoreNLogRabbitMQ\bin\Debug\netcoreapp2.0
+2019-01-19 15:03:52.6860 Debug Start auto loading, location: D:\AKKI_DEV\RND\CoreNLogRabbitMQ\CoreNLogRabbitMQ\bin\Debug\netcoreapp2.0
+2019-01-19 15:03:52.6860 Trace Assembly 'Microsoft.Extensions.Logging, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-01-19 15:03:52.6860 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2019-01-19 15:03:52.6860 Debug Auto loading done
+2019-01-19 15:03:52.6860 Info Message Template Auto Format enabled
+2019-01-19 15:03:52.7070 Info Loading assembly: Nlog.RabbitMQ.Target
+2019-01-19 15:03:52.7208 Debug ScanAssembly('Nlog.RabbitMQ.Target, Version=2.5.3.0, Culture=neutral, PublicKeyToken=null')
+2019-01-19 15:03:52.7764 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-01-19 15:03:52.7828 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-01-19 15:03:52.7828 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-01-19 15:03:52.8237 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-01-19 15:03:52.8237 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-01-19 15:03:52.8237 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-01-19 15:03:52.8237 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-01-19 15:03:52.8262 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-01-19 15:03:52.8262 Trace  Scanning Property Culture '' System.Globalization
+2019-01-19 15:03:52.8262 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-01-19 15:03:52.8262 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-01-19 15:03:52.8262 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.8262 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-01-19 15:03:52.8262 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-01-19 15:03:52.8262 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-01-19 15:03:52.8262 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-01-19 15:03:52.8262 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-01-19 15:03:52.8262 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-01-19 15:03:52.8262 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.name' to 'logstash'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.username' to 'guest'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.password' to 'guest'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.hostname' to 'localhost'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.exchange' to 'rmq.target.demo'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.port' to '5672'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.vhost' to '/'
+2019-01-19 15:03:52.8438 Debug Setting 'RabbitMQTarget.useJSON' to 'true'
+2019-01-19 15:03:52.8438 Debug Setting 'Field.key' to 'fieldFromConfig'
+2019-01-19 15:03:52.8438 Debug Setting 'Field.name' to 'Field From Config'
+2019-01-19 15:03:52.8574 Debug Setting 'Field.layout' to '${machinename}'
+2019-01-19 15:03:52.8574 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-01-19 15:03:52.8574 Trace Scanning MachineNameLayoutRenderer 'Layout Renderer: ${machinename}'
+2019-01-19 15:03:52.8574 Debug Setting 'Field.key' to 'EmployeeName'
+2019-01-19 15:03:52.8574 Debug Setting 'Field.name' to 'Employee Name'
+2019-01-19 15:03:52.8574 Debug Setting 'Field.layout' to 'Overriden From Config'
+2019-01-19 15:03:52.8574 Debug Setting 'Field.key' to 'EmployeeID'
+2019-01-19 15:03:52.8574 Debug Setting 'Field.name' to ''
+2019-01-19 15:03:52.8574 Debug Setting 'Field.layout' to 'Overriden From Config'
+2019-01-19 15:03:52.8574 Debug Wrapping target 'logstash' with AsyncTargetWrapper and renaming to 'logstash_wrapped
+2019-01-19 15:03:52.8742 Info Adding target AsyncWrapper Target[logstash](RabbitMQ Target[logstash_wrapped])
+2019-01-19 15:03:52.8742 Debug Registered target logstash: NLog.Targets.Wrappers.AsyncTargetWrapper
+2019-01-19 15:03:52.8742 Trace ParseRulesElement
+2019-01-19 15:03:52.8742 Info Configured from an XML element in D:\AKKI_DEV\RND\CoreNLogRabbitMQ\CoreNLogRabbitMQ/nlog.config...
+2019-01-19 15:03:52.8956 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2019-01-19 15:03:52.8956 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2019-01-19 15:03:52.9049 Debug --- NLog configuration dump ---
+2019-01-19 15:03:52.9049 Debug Targets:
+2019-01-19 15:03:52.9049 Debug AsyncWrapper Target[logstash](RabbitMQ Target[logstash_wrapped])
+2019-01-19 15:03:52.9049 Debug Rules:
+2019-01-19 15:03:52.9049 Debug logNamePattern: (:All) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ logstash ]
+2019-01-19 15:03:52.9049 Debug --- End of NLog configuration dump ---
+2019-01-19 15:03:52.9049 Trace FindReachableObject<System.Object>:
+2019-01-19 15:03:52.9049 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Trace Debug Info Warn Error Fatal ] appendTo: [ logstash ]'
+2019-01-19 15:03:52.9049 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-01-19 15:03:52.9049 Trace  Scanning AsyncTargetWrapper 'AsyncWrapper Target[logstash](RabbitMQ Target[logstash_wrapped])'
+2019-01-19 15:03:52.9049 Trace   Scanning Property WrappedTarget 'RabbitMQ Target[logstash_wrapped]' NLog.Targets
+2019-01-19 15:03:52.9049 Trace   Scanning RabbitMQTarget 'RabbitMQ Target[logstash_wrapped]'
+2019-01-19 15:03:52.9201 Trace    Scanning Property Topic ''{0}'' NLog.Layouts
+2019-01-19 15:03:52.9201 Trace    Scanning SimpleLayout ''{0}''
+2019-01-19 15:03:52.9201 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9201 Trace     Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9201 Trace    Scanning Property Protocol '0-9' RabbitMQ.Client
+2019-01-19 15:03:52.9201 Trace    Scanning Property Fields 'System.Collections.Generic.List`1[Nlog.RabbitMQ.Target.Field]' System.Collections.Generic
+2019-01-19 15:03:52.9201 Trace    Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:52.9201 Trace     Scanning Property Layout ''${machinename}'' NLog.Layouts
+2019-01-19 15:03:52.9201 Trace     Scanning SimpleLayout ''${machinename}''
+2019-01-19 15:03:52.9201 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9201 Trace      Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9201 Trace    Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:52.9201 Trace     Scanning Property Layout ''Overriden From Config'' NLog.Layouts
+2019-01-19 15:03:52.9201 Trace     Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:52.9201 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9201 Trace      Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9201 Trace    Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:52.9201 Trace     Scanning Property Layout ''Overriden From Config'' NLog.Layouts
+2019-01-19 15:03:52.9201 Trace     Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:52.9201 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9201 Trace      Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9201 Trace    Scanning Property Layout ''${message}'' NLog.Layouts
+2019-01-19 15:03:52.9201 Trace    Scanning SimpleLayout ''${message}''
+2019-01-19 15:03:52.9201 Trace     Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9201 Trace     Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-01-19 15:03:52.9361 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-01-19 15:03:52.9361 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-01-19 15:03:52.9361 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9361 Info Found 16 configuration items
+2019-01-19 15:03:52.9361 Trace Initializing Layout Renderer: ${message}
+2019-01-19 15:03:52.9361 Trace Initializing '${message}'
+2019-01-19 15:03:52.9361 Trace FindReachableObject<System.Object>:
+2019-01-19 15:03:52.9361 Trace Scanning SimpleLayout ''${message}''
+2019-01-19 15:03:52.9361 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9361 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-01-19 15:03:52.9522 Trace Initializing Layout Renderer: ${literal}
+2019-01-19 15:03:52.9522 Trace Initializing 'Overriden From Config'
+2019-01-19 15:03:52.9522 Trace FindReachableObject<System.Object>:
+2019-01-19 15:03:52.9522 Trace Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:52.9522 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9522 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9522 Trace Initializing Layout Renderer: ${literal}
+2019-01-19 15:03:52.9522 Trace Initializing 'Overriden From Config'
+2019-01-19 15:03:52.9522 Trace FindReachableObject<System.Object>:
+2019-01-19 15:03:52.9522 Trace Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:52.9522 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9522 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9522 Trace Initializing Layout Renderer: ${literal}
+2019-01-19 15:03:52.9522 Trace Initializing '${machinename}'
+2019-01-19 15:03:52.9522 Trace FindReachableObject<System.Object>:
+2019-01-19 15:03:52.9522 Trace Scanning SimpleLayout ''${machinename}''
+2019-01-19 15:03:52.9522 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9522 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9522 Trace Initializing Layout Renderer: ${literal}
+2019-01-19 15:03:52.9522 Trace Initializing '{0}'
+2019-01-19 15:03:52.9522 Trace FindReachableObject<System.Object>:
+2019-01-19 15:03:52.9522 Trace Scanning SimpleLayout ''{0}''
+2019-01-19 15:03:52.9522 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-01-19 15:03:52.9522 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-01-19 15:03:52.9522 Trace Initializing RabbitMQ Target[logstash_wrapped]
+2019-01-19 15:03:52.9699 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-01-19 15:03:52.9699 Trace Scanning RabbitMQTarget 'RabbitMQ Target[logstash_wrapped]'
+2019-01-19 15:03:52.9699 Trace  Scanning Property Topic ''{0}'' NLog.Layouts
+2019-01-19 15:03:52.9699 Trace  Scanning SimpleLayout ''{0}''
+2019-01-19 15:03:52.9699 Trace  Scanning Property Protocol '0-9' RabbitMQ.Client
+2019-01-19 15:03:52.9699 Trace  Scanning Property Fields 'System.Collections.Generic.List`1[Nlog.RabbitMQ.Target.Field]' System.Collections.Generic
+2019-01-19 15:03:52.9699 Trace  Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:52.9699 Trace   Scanning Property Layout ''${machinename}'' NLog.Layouts
+2019-01-19 15:03:52.9699 Trace   Scanning SimpleLayout ''${machinename}''
+2019-01-19 15:03:52.9699 Trace  Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:52.9699 Trace   Scanning Property Layout ''Overriden From Config'' NLog.Layouts
+2019-01-19 15:03:52.9699 Trace   Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:52.9699 Trace  Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:52.9699 Trace   Scanning Property Layout ''Overriden From Config'' NLog.Layouts
+2019-01-19 15:03:52.9699 Trace   Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:52.9699 Trace  Scanning Property Layout ''${message}'' NLog.Layouts
+2019-01-19 15:03:52.9699 Trace  Scanning SimpleLayout ''${message}''
+2019-01-19 15:03:52.9699 Trace RabbitMQ Target[logstash_wrapped] has 5 layouts
+2019-01-19 15:03:55.9883 Warn RabbitMQTarget(Name=logstash_wrapped): Starting connection-task timed out, continuing
+2019-01-19 15:03:55.9883 Trace Initializing AsyncWrapper Target[logstash](RabbitMQ Target[logstash_wrapped])
+2019-01-19 15:03:55.9883 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-01-19 15:03:55.9883 Trace Scanning AsyncTargetWrapper 'AsyncWrapper Target[logstash](RabbitMQ Target[logstash_wrapped])'
+2019-01-19 15:03:55.9883 Trace  Scanning Property WrappedTarget 'RabbitMQ Target[logstash_wrapped]' NLog.Targets
+2019-01-19 15:03:55.9975 Trace  Scanning RabbitMQTarget 'RabbitMQ Target[logstash_wrapped]'
+2019-01-19 15:03:55.9975 Trace   Scanning Property Topic ''{0}'' NLog.Layouts
+2019-01-19 15:03:55.9975 Trace   Scanning SimpleLayout ''{0}''
+2019-01-19 15:03:55.9975 Trace   Scanning Property Protocol '0-9' RabbitMQ.Client
+2019-01-19 15:03:55.9975 Trace   Scanning Property Fields 'System.Collections.Generic.List`1[Nlog.RabbitMQ.Target.Field]' System.Collections.Generic
+2019-01-19 15:03:55.9975 Trace   Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:55.9975 Trace    Scanning Property Layout ''${machinename}'' NLog.Layouts
+2019-01-19 15:03:55.9975 Trace    Scanning SimpleLayout ''${machinename}''
+2019-01-19 15:03:55.9975 Trace   Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:55.9975 Trace    Scanning Property Layout ''Overriden From Config'' NLog.Layouts
+2019-01-19 15:03:55.9975 Trace    Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:56.0141 Trace   Scanning Field 'Nlog.RabbitMQ.Target.Field'
+2019-01-19 15:03:56.0141 Trace    Scanning Property Layout ''Overriden From Config'' NLog.Layouts
+2019-01-19 15:03:56.0141 Trace    Scanning SimpleLayout ''Overriden From Config''
+2019-01-19 15:03:56.0141 Trace   Scanning Property Layout ''${message}'' NLog.Layouts
+2019-01-19 15:03:56.0141 Trace   Scanning SimpleLayout ''${message}''
+2019-01-19 15:03:56.0141 Trace AsyncWrapper Target[logstash](RabbitMQ Target[logstash_wrapped]) has 5 layouts
+2019-01-19 15:03:56.0141 Trace AsyncWrapper 'logstash': start timer
+2019-01-19 15:03:56.0616 Debug Watching path 'D:\AKKI_DEV\RND\CoreNLogRabbitMQ\CoreNLogRabbitMQ' filter 'nlog.config' for changes.
+2019-01-19 15:03:57.8591 Debug Targets for RmqTarget by level:
+2019-01-19 15:03:57.8591 Debug Trace => logstash
+2019-01-19 15:03:57.8733 Debug Debug => logstash
+2019-01-19 15:03:57.8733 Debug Info => logstash
+2019-01-19 15:03:57.8733 Debug Warn => logstash
+2019-01-19 15:03:57.8733 Debug Error => logstash
+2019-01-19 15:03:57.8733 Debug Fatal => logstash
+2019-01-19 15:03:57.9438 Trace AsyncWrapper 'logstash': writing 1 events (Timer)
